@@ -34,15 +34,32 @@
 
 * Clone this repository
 ``` 
-$ git clone https://github.com/jagati2/smart-virtual-assistant.git
+git clone https://github.com/jagati2/smart-virtual-assistant.git
 ```  
 <br>
 
 > ### **Step 2**
 
+* Switch to `smart-virtual-assistant` directory.
+``` 
+cd smart-virtual-assistant
+```  
+<br>
+
+> ### **Step 3**
+
+* Switch to `dev` branch
+``` 
+git checkout dev
+```  
+<br>
+
+
+> ### **Step 4**
+
 * Install dependencies
 ```
-$ pip install -r requirements.txt 
+pip install -r requirements.txt 
 ```
 <br>
 
@@ -51,11 +68,11 @@ $ pip install -r requirements.txt
 <br>
 
 ```
-$ pip3 install -r requirements.txt 
+pip3 install -r requirements.txt 
 ```
 <br>
 
-> ### **Step 3**
+> ### **Step 5**
 
 * Run script
 
