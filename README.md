@@ -1,11 +1,17 @@
 # smart-virtual-assistant
 
-> >### This is a smart Virtual assistsant  which functions similar to Alexa
+## This is a smart Virtual assistsant  which functions similar to Alexa
+
+<hr>
 
 <br>
 
-#### It can do a lot of cool things, some of them being :
+### It can do a lot of cool things, some of them being :
 
+<br>
+
+
+>
 > *   Greet user
 > *   Tell current time and date
 > *   Launch applications/softwares
@@ -18,7 +24,48 @@
 > *    Plays music
 > *    Send email (with subject and content)
 > *    Calculate any mathematical expression ( example: Steve, calculate `x + 135 - 234 = 345` )
-   
+
+<br>
+<hr>
+
+## Install on your local machine
+
+> ### **Step 1**
+
+* Clone this repository
+``` 
+$ git clone https://github.com/jagati2/smart-virtual-assistant.git
+```  
+<br>
+
+> ### **Step 2**
+
+* Install dependencies
+```
+$ pip install -r requirements.txt 
+```
+<br>
+
+### **OR**
+
+<br>
+
+```
+$ pip3 install -r requirements.txt 
+```
+<br>
+
+> ### **Step 3**
+
+* Run script
+
+```
+$ python Steve.py
+```
+
+### **NOTE :** ` This installation is for windows user` 
+
+
  
 
     

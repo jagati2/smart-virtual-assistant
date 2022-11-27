@@ -5,6 +5,7 @@ import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
 import os
+import light as lt
 import smtplib
 
 engine = pyttsx3.init('sapi5')
@@ -37,7 +38,7 @@ def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
-        r.pause_threshold = 1
+        r.pause_threshold = 0.5
         audio = r.listen(source)
 
     try:
@@ -80,25 +81,25 @@ if __name__ == "__main__":
         elif 'open google' in query:
             webbrowser.open("google.com")
 
-        elif 'open stackoverflow' in query:
+        elif 'open stack overflow' in query:
             webbrowser.open("stackoverflow.com")   
 
 
-        elif 'play music' in query:
+        elif 'play music' in query: #
             music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[0]))
 
-        elif 'the time' in query:
+        elif 'time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
             speak(f"Sir, the time is {strTime}")
 
-        elif 'open code' in query:
+        elif 'open code' in query: #
             codePath = "Desktop\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
 
-        elif 'email to Jagati' in query:
+        elif 'email' in query: #
             try:
                 speak("What should I say?")
                 content = takeCommand()
@@ -107,4 +108,15 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("I am not able to send the Email , please try again ")    
+                speak("I am not able to send the Email , please try again ")  
+
+        elif 'turn on the light' in query:
+            speak("Turning on the lights")
+            lt.pub("on")  
+
+        elif 'turn off the light' in query:
+            speak("Turning off the lights")
+            lt.pub("off")  
+
+
+
